@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="bio.png">
+  <link rel="stylesheet" href="style.css">
+  <title>Processamento - BioRewards</title>
+</head>
+<body>
+  <nav class="navbar">
+    <div class="container">
+      <img src="bio.png" alt="Logo" width="60" height="54" class="air">
+      <h2>BioRewards</h2>
+      <h4><a href="index.html" class="link-navbar">Home</a></h4>
+      <h4><a href="index.html#localizacao" class="link-navbar">Localização</a></h4>
+      <h4><a href="index.html#quem-somos" class="link-navbar">Quem somos</a></h4>
+      <h4><a href="contribuir.html" class="link-navbar">Contribuir</a></h4>
+      <h4><a href="receber.html" class="link-navbar">À receber</a></h4>
+    </div>
+  </nav>
+
+  <br><br><br><br><br><br>
+  <center>
+    <h1>Processamento Solicitação de recompensa</h1>
+  </center>
+  <br><br>
+  <center>
+    <div class="carta">
+      <h3><strong>Produto: </strong>Garrafa PET 3L</h3>
+      <h3><strong>Depósito: </strong>Av. Paulista</h3>
+      <h3><strong>Quantidade: </strong>1 unidade</h3>
+      <br><br>
+      <h2><strong>Valor a receber: </strong>R$2,00</h2>
+      <br>
+      <div class="btns">
+        <button onclick="reinvindicar()">Reinvindicar</button>
+        <button onclick="voltar()">Voltar</button>
+      </div>
+    </div>
+  </center>
+
+  <script>
+    function reinvindicar() {
+      let senha = prompt("Digite seu CPF:");
+      let cpf = prompt("Digite sua senha:");
+      if (senha !== null && cpf !== null) {
+        alert("Prosseguir");
+        window.location.href = "receber.html";
+      }
+    }
+
+    function voltar() {
+      window.history.back();
+    }
+  </script>
+
+</body>
+</html>
