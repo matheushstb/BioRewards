@@ -17,7 +17,7 @@
             <h4><a href="index.html#localizacao" class="link-navbar">Localização</a></h4>
             <h4><a href="index.html#quem-somos" class="link-navbar">Quem somos</a></h4>
             <h4><a href="contribuir.html" class="link-navbar">Contribuir</a></h4>
-            <h4><a href="receber.html" class="link-navbar">À receber</a></h4>
+            <h4><a href="receber.html" class="link-navbar">Receber</a></h4>
         </div>
     </nav>
 
@@ -33,6 +33,9 @@
             <h4>Av. Paulista</h4>
             <h4>1 unidade</h4>
             <p>Valor a receber: R$ 2,00</p>
+            <div class="btns">
+                <button onclick="reinvindicar()">Sacar</button>
+            </div>
         </div>
 
         <div class="card-produto" style="margin-left: 100px;">
@@ -40,7 +43,20 @@
             <h4>Osasco</h4>
             <h4>2 unidades</h4>
             <p>Valor a receber: R$ 1,50</p>
+            <div class="btns">
+                <button onclick="reinvindicar()">Sacar</button>
+            </div>
         </div>
+
+        <script>
+            function reinvindicar() {
+              let senha = prompt("Confirme sua senha:");
+              if (senha !== null) {
+                alert("Prosseguir");
+                window.location.href = "processo.html";
+              }
+            }
+            </script>
     </div>
 
     <center>
@@ -62,6 +78,7 @@
             <p>Valor recebido: R$ 1,00</p>
         </div>
     </div>
+    <button onclick="scrollToTop()" id="scrollTopBtn" title="Voltar ao topo">↑</button>
 
     <footer>
         <p>© 2025 BioRewards - Todos os direitos reservados</p>
